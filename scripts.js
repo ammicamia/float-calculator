@@ -1,10 +1,13 @@
 const form = document.getElementById('calculator_form');
 const inputs = document.querySelectorAll('.float-input');
 const totalOutput = document.getElementById('running_total');
+const targetFloatInput = document.getElementById('target_float');
 
 // Update the total whenever an input changes
 function updateTotal() {
     let sum = 0;
+    let difference = 0;
+    let symbol = '';
 
     inputs.forEach(input => {
         const denom = parseFloat(input.dataset.value);
@@ -17,12 +20,18 @@ function updateTotal() {
 
         sum += (count * denom);
     });
+    
+    const targetValue = parseInt(targetFloatInput.value, 10) || 0;
+    difference = sum - targetValue;
 
-    totalOutput.textContent = `$${sum.toFixed(2)}`;
+    symbol = difference < 0 ? '-' : '+';
+
+    totalOutput.textContent = `$${sum.toFixed(2)} (${symbol}${Math.abs(difference).toFixed(2)})`;
 }
 
 // Attach the updateTotal function to the input event of the form
 form.addEventListener('input', updateTotal);
+targetFloatInput.addEventListener('input', updateTotal);
 
 // Prevent the form from submitting and refreshing the page
 form.addEventListener('submit', (e) => {
@@ -37,6 +46,8 @@ function resetForm() {
     inputs.forEach(input => {
         input.value = '';
     });
+    
+    targetFloatInput.value = '';
     updateTotal();
 }
 

@@ -5,13 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Float Calculator</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700">
         <script src="scripts.js" defer></script>
     </head>
     <body>
+        <div class="container">
         <h1>Float Calculator</h1>
-        <output id="running_total" class="running-total">$0.00</output>
+        <output id="running_total" class="running-total">$0.00 ($0.00)</output>
+        <hr>
+        <input type="number" id="target_float" class="float-total" data-value="0" min="0" step="1" placeholder="Target Float" aria-label="Target Float">
         <hr>
         <form id="calculator_form" class="calculator-form">
+            
             <label for="100_float">$100 x</label>
             <input type="number" id="100_float" class="float-input" data-value="100" min="0" step="1" placeholder="0">
             <label for="50_float">$50 x</label>
@@ -35,5 +40,6 @@
         </form>
 
         <button type="button" id="reset_button" class="reset-button">Reset</button>
+        </div>
     </body>
 </html>
