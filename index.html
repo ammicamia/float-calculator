@@ -10,36 +10,36 @@
     </head>
     <body>
         <div class="container">
-        <h1>Float Calculator</h1>
-        <output id="running_total" class="running-total">$0.00 ($0.00)</output>
-        <hr>
-        <input type="number" id="target_float" class="float-total" data-value="0" min="0" step="1" placeholder="Target Float" aria-label="Target Float">
-        <hr>
-        <form id="calculator_form" class="calculator-form">
-            
-            <label for="100_float">$100 x</label>
-            <input type="number" id="100_float" class="float-input" data-value="100" min="0" step="1" placeholder="0">
-            <label for="50_float">$50 x</label>
-            <input type="number" id="50_float" class="float-input" data-value="50" min="0" step="1" placeholder="0">
-            <label for="20_float">$20 x</label>
-            <input type="number" id="20_float" class="float-input" data-value="20" min="0" step="1" placeholder="0">
-            <label for="10_float">$10 x</label>
-            <input type="number" id="10_float" class="float-input" data-value="10" min="0" step="1" placeholder="0">
-            <label for="5_float">$5 x</label>
-            <input type="number" id="5_float" class="float-input" data-value="5" min="0" step="1" placeholder="0">
-            <label for="2_float">$2 x</label>
-            <input type="number" id="2_float" class="float-input" data-value="2" min="0" step="1" placeholder="0">
-            <label for="1_float">$1 x</label>
-            <input type="number" id="1_float" class="float-input" data-value="1" min="0" step="1" placeholder="0">
-            <label for="50c_float">$0.50 x</label>
-            <input type="number" id="50c_float" class="float-input" data-value="0.50" min="0" step="1" placeholder="0">
-            <label for="20c_float">$0.20 x</label>
-            <input type="number" id="20c_float" class="float-input" data-value="0.20" min="0" step="1" placeholder="0">
-            <label for="10c_float">$0.10 x</label>
-            <input type="number" id="10c_float" class="float-input" data-value="0.10" min="0" step="1" placeholder="0">
-        </form>
+            <h1>Float Calculator</h1>
+            <output id="running_total" class="running-total">$0.00 ($0.00)</output>
+            <hr>
+            <input type="number" id="target_float" class="float-total" data-value="0" min="0" step="1" placeholder="Target Float" aria-label="Target Float">
+            <hr>
+            <form id="calculator_form" class="calculator-form">
+                
+                <label for="100_float">$100 x</label>
+                <input type="number" inputmode="numeric" pattern="[0-9]*" id="100_float" class="float-input" data-value="100" min="0" step="1" placeholder="0" enterkeyhint="next">
+                <label for="50_float">$50 x</label>
+                <input type="number" inputmode="numeric" pattern="[0-9]*" id="50_float" class="float-input" data-value="50" min="0" step="1" placeholder="0" enterkeyhint="next">
+                <label for="20_float">$20 x</label>
+                <input type="number" inputmode="numeric" pattern="[0-9]*" id="20_float" class="float-input" data-value="20" min="0" step="1" placeholder="0" enterkeyhint="next">
+                <label for="10_float">$10 x</label>
+                <input type="number" inputmode="numeric" pattern="[0-9]*" id="10_float" class="float-input" data-value="10" min="0" step="1" placeholder="0" enterkeyhint="next">
+                <label for="5_float">$5 x</label>
+                <input type="number" inputmode="numeric" pattern="[0-9]*" id="5_float" class="float-input" data-value="5" min="0" step="1" placeholder="0" enterkeyhint="next">
+                <label for="2_float">$2 x</label>
+                <input type="number" inputmode="numeric" pattern="[0-9]*" id="2_float" class="float-input" data-value="2" min="0" step="1" placeholder="0" enterkeyhint="next">
+                <label for="1_float">$1 x</label>
+                <input type="number" inputmode="numeric" pattern="[0-9]*" id="1_float" class="float-input" data-value="1" min="0" step="1" placeholder="0" enterkeyhint="next">
+                <label for="50c_float">$0.50 x</label>
+                <input type="number" inputmode="numeric" pattern="[0-9]*" id="50c_float" class="float-input" data-value="0.50" min="0" step="1" placeholder="0" enterkeyhint="next">
+                <label for="20c_float">$0.20 x</label>
+                <input type="number" inputmode="numeric" pattern="[0-9]*" id="20c_float" class="float-input" data-value="0.20" min="0" step="1" placeholder="0" enterkeyhint="next">
+                <label for="10c_float">$0.10 x</label>
+                <input type="number" inputmode="numeric" pattern="[0-9]*" id="10c_float" class="float-input" data-value="0.10" min="0" step="1" placeholder="0" enterkeyhint="next">
+            </form>
 
-        <button type="button" id="reset_button" class="reset-button">Reset</button>
+            <button type="button" id="reset_button" class="reset-button">Reset</button>
         </div>
     </body>
 </html>
