@@ -19,7 +19,7 @@ Counting the cash float manually at work used to take around 10 minutes—and if
 1. Open the live link on your phone or till computer.
 2. Count the number of each note and coin in the drawer.
 3. Enter the **count** (not the dollar value) into each matching denomination box.
-4. Read the **Running Total** at the bottom.
+4. Read the **Running Total** at the top.
 5. Click **Reset** to clear all fields for the next till.
 
 ## Tech Stack
