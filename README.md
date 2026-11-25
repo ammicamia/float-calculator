@@ -9,7 +9,8 @@ Counting the cash float manually at work used to take around 10 minutes—and if
 * **Live Running Total:** Updates instantly as numbers are typed—no "Calculate" or "Submit" button needed.
 * **Denomination Breakdown:** Supports standard notes and coins using custom `data-value` multipliers.
 * **Input Guardrails:** Prevents negative values and decimal counts so till calculations stay accurate.
-* **Mobile-Friendly Layout:** Responsive CSS Grid layout designed to be easy to tap and read on a phone at the counter.
+* **Mobile-Friendly Layout:** Responsive CSS Grid layout designed to be easy to tap and read on a phone at the counter, numeric keypad also prevents having to switch keyboard screens.
+* **Reset Feature:** Clears all inputs so restarting is easy.
 
 ## Live Demo
 👉 **[Use the Cash Float Counter here](https://ammicamia.github.io/float-calculator/)**
